@@ -14,17 +14,17 @@ This work provides a valuable baseline and new insights for the development of m
 image segmentation systems. 
 Keywords:KAN,Manba, state-space models,UNet, Medical image segmentation, Deep learning
 
-train:python train.py --arch KM_UNet --dataset {dataset} --input_w {input_size} --input_h {input_size} --name {dataset}_UKAN  --data_dir [YOUR_DATA_DIR]
+train:python train.py --arch KM_UNet --dataset {dataset} --input_w {input_size} --input_h {input_size} --name {dataset}_KM-UNet  --data_dir [YOUR_DATA_DIR]
 
-For example:python train.py --arch KM_UNet --dataset busi --input_w 256 --input_h 256 --name busi_UKAN  --data_dir ./inputs
+For example:python train.py --arch KM_UNet --dataset busi --input_w 256 --input_h 256 --name busi_KM-UNet  --data_dir ./inputs
 
 The input folder contains the five datasets used in the experiment,it is opening datasets,can download in Kaggle. 
 The data format is:
 Dataset name: 
-	images -1
-	            -2
+	images     -1.png
+	            -2.png
 	            ...
-	masks -1
-	           -2
+	masks      -1.png
+	           -2.png
 	           ...
 and the outputs folder contains the training data obtained from the article training(the weight file was larger than 25M,if you need,send me email)
