@@ -1,5 +1,5 @@
 KM-UNet: KAN Mamba UNet for medical image segmentation
-paper:
+paper:https://arxiv.org/abs/2501.02559
 Medical image segmentation is a critical task in medical imaging analysis. Traditional CNN-based methods struggle with 
 modeling long-range dependencies, while Transformer-based models, despite their success, suffer from quadratic 
 computational complexity. To address these limitations, we propose KM-UNet, a novel U-shaped network architecture that 
@@ -18,4 +18,4 @@ train:python train.py --arch KM_UNet --dataset {dataset} --input_w {input_size} 
 
 For example:python train.py --arch KM_UNet --dataset busi --input_w 256 --input_h 256 --name busi_UKAN  --data_dir ./inputs
 
-The input folder contains the five data sets used in the experiment, and the outputs folder contains the weight files obtained from the article training
+The input folder contains the five data sets used in the experiment,it is opening datasets,can download in Kaggle. and the outputs folder contains the training data obtained from the article training(the weight file was larger than 25M,if you need,send me email)
