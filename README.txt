@@ -18,4 +18,13 @@ train:python train.py --arch KM_UNet --dataset {dataset} --input_w {input_size} 
 
 For example:python train.py --arch KM_UNet --dataset busi --input_w 256 --input_h 256 --name busi_UKAN  --data_dir ./inputs
 
-The input folder contains the five data sets used in the experiment,it is opening datasets,can download in Kaggle. and the outputs folder contains the training data obtained from the article training(the weight file was larger than 25M,if you need,send me email)
+The input folder contains the five datasets used in the experiment,it is opening datasets,can download in Kaggle. 
+The data format is:
+Dataset name: 
+	images -1
+	            -2
+	            ...
+	masks -1
+	           -2
+	           ...
+and the outputs folder contains the training data obtained from the article training(the weight file was larger than 25M,if you need,send me email)
